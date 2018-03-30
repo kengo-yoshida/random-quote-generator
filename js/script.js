@@ -14,3 +14,9 @@ var quote = [
 
     }
 ]
+
+$(document).ready(function(){
+    $("#generate-btn").on("click", function(){
+        console.log("clicked")
+    });
+});
