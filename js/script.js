@@ -18,6 +18,7 @@ var quote = [
 $(document).ready(function(){
     $("#generate-btn").on("click", function(){
         var randomIndex = Math.floor(Math.random() * quote.length)
-        console.log(quote[randomIndex]["quote"])
+        var randomeQuote = quote[randomIndex]["quote"]
+        $("#quote-txt").text(randomeQuote);
     });
 });
