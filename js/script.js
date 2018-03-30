@@ -17,6 +17,7 @@ var quote = [
 
 $(document).ready(function(){
     $("#generate-btn").on("click", function(){
-        console.log("clicked")
+        var randomIndex = Math.floor(Math.random() * quote.length)
+        console.log(quote[randomIndex]["quote"])
     });
 });
